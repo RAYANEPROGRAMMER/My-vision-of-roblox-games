@@ -14,24 +14,6 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.header-icon {
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
-	transition: transform 0.3s;
-	cursor: pointer;
-}
-
-.header-icon:hover {
-	transform: scale(1.07)
-}
-
 header h1 {
     font-family: 'Andika', sans-serif;
 	text-align: center;
