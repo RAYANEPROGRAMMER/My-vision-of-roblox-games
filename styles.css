@@ -14,9 +14,27 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-icon {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.header-icon:hover {
+    transform: scale(1.07);
+}
+
 header h1 {
     font-family: 'Andika', sans-serif;
-	text-align: center;
+    text-align: center;
 }
 
 nav ul {
@@ -52,6 +70,18 @@ nav ul li a:hover {
     overflow: hidden;
 }
 
+/* Initial state for fade-in effect */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .content-section:hover {
     transform: scale(1.009);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -61,7 +91,7 @@ nav ul li a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
-	padding: 50px;
+    padding: 50px;
     background: white;
     margin: 20px;
     border-radius: 10px;
@@ -70,23 +100,23 @@ nav ul li a:hover {
 }
 
 .donate-grid:hover {
-	transform: scale(1.009);
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.009);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
 
 .donate-item {
     background: rgba(255, 255, 255, 1);
     border-radius: 10px;
     padding: 20px;
     text-align: center;
-	transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .donate-item:hover {
-	transform: scale(1.08);
+    transform: scale(1.08);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .donate-item h2 {
     margin: 0 0 10px;
 }
@@ -102,12 +132,13 @@ nav ul li a:hover {
     text-decoration: none;
     display: inline-block;
     margin-top: 10px;
-	transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
 }
+
 .donate-button:hover {
     color: white;
     background: rgba(0, 0, 0, 0.2);
-	transform: scale(1.005);
+    transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -137,7 +168,7 @@ footer ul li a {
 
 footer ul li a:hover {
     color: lightgray;
-	font-size: 120%;
+    font-size: 120%;
 }
 
 button {
@@ -145,12 +176,14 @@ button {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
     border-radius: 5px;
 }
 
 button:hover {
     background: magenta;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 input, textarea {
