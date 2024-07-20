@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika&family=Inter:wght@400;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, cyan, magenta, yellow);
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: 'Andika', sans-serif;
+	text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: lightgray;
+}
+
+.content-section {
+    padding: 50px;
+    background: white;
+    margin: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+}
+
+.content-section:hover {
+    transform: scale(1.009);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.donate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+	padding: 50px;
+    background: white;
+    margin: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+}
+
+.donate-grid:hover {
+	transform: scale(1.009);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.donate-item {
+    background: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+	transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.donate-item:hover {
+	transform: scale(1.08);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.donate-item h2 {
+    margin: 0 0 10px;
+}
+
+.donate-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #928dab;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+	transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+.donate-button:hover {
+    color: white;
+    background: rgba(0, 0, 0, 0.2);
+	transform: scale(1.005);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 0px 20px;
+    transition: color 0.3s, font-size 0.3s;
+}
+
+footer ul li a:hover {
+    color: lightgray;
+	font-size: 120%;
+}
+
+button {
+    background: cyan;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: magenta;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    transition: border 0.3s;
+}
+
+input:focus, textarea:focus {
+    border: 1px solid magenta;
+    outline: none;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
